@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Kyle Navarro - Web Developer - CV</title>
+<meta name="author" content="Kyle Navarro">
+<meta name="description" content="Resume of Kyle Navarro, Web Developer">
+<style>
+  @font-face { font-family: "Arial CV"; src: url("file:///mnt/c/Windows/Fonts/arial.ttf"); font-weight: 400; }
+  @font-face { font-family: "Arial CV"; src: url("file:///mnt/c/Windows/Fonts/arialbd.ttf"); font-weight: 700; }
+  @font-face { font-family: "Arial CV"; src: url("file:///mnt/c/Windows/Fonts/ariali.ttf"); font-weight: 400; font-style: italic; }
+  @page { size: Letter; margin: 0.6in 0.7in; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Arial CV", Arial, Helvetica, sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.35;
+    color: #111;
+  }
+  h1 { margin: 0; font-size: 20pt; letter-spacing: 0.5pt; }
+  .role { margin: 2pt 0 0; font-size: 11.5pt; font-weight: 700; }
+  .contact { margin: 4pt 0 0; font-size: 10pt; }
+  .contact a { color: #111; text-decoration: none; }
+  h2 {
+    margin: 13pt 0 5pt;
+    padding-bottom: 2pt;
+    border-bottom: 1px solid #111;
+    font-size: 11pt;
+    letter-spacing: 0.6pt;
+    text-transform: uppercase;
+  }
+  p { margin: 0; }
+  ul { margin: 2pt 0 0; padding-left: 14pt; }
+  li { margin: 1.5pt 0; }
+  .skills p { margin: 1.5pt 0; }
+  .item { margin-top: 8pt; break-inside: avoid; }
+  .item:first-of-type { margin-top: 0; }
+  .item-head { font-weight: 700; }
+  .item-sub { font-style: italic; }
+  .tech { margin-top: 2pt; }
+  .tech b { font-weight: 700; }
+</style>
+</head>
+<body>
+  <h1>KYLE NAVARRO</h1>
+  <p class="role">Web Developer</p>
+  <p class="contact">Email: kyle.y.navarro.j@gmail.com | LinkedIn: linkedin.com/in/kyle-navarro-geek</p>
+
+  <h2>Professional Summary</h2>
+  <p>Web developer with a background in B2B sales. I build websites and web applications for real businesses: product catalogs that end in a WhatsApp quote, online ordering platforms, corporate sites and bilingual personal sites. My sales experience helps me understand how business customers decide and what moves them to request a quote or place an order. I work with AI-assisted development (Claude Code) to plan, build and review software and ship it quickly with human judgment on every delivery.</p>
+
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <p><b>Languages:</b> TypeScript, JavaScript, HTML5, CSS3, SQL</p>
+    <p><b>Frameworks and Libraries:</b> React, Node.js, Express, Tailwind CSS, Vite, TanStack Query, Zustand, Zod</p>
+    <p><b>Backend and Data:</b> Supabase (PostgreSQL, Auth, Storage, Row Level Security), Google Sheets API</p>
+    <p><b>Testing and Deployment:</b> Vitest, Cloudflare Workers, Netlify, GitHub Pages, Git, GitHub</p>
+    <p><b>AI:</b> Claude Code, Claude API, AI-assisted development</p>
+    <p><b>Practices:</b> Responsive design, bilingual sites (i18n), web performance, accessibility, SEO metadata, WhatsApp ordering and quoting flows</p>
+  </div>
+
+  <h2>Project Experience</h2>
+
+  <div class="item">
+    <p class="item-head">FlashBuy | flashbuy.app</p>
+    <p class="item-sub">Multi-tenant SaaS for WhatsApp ordering</p>
+    <ul>
+      <li>Built a multi-tenant SaaS that gives restaurants, cafes, bakeries and food stores their own catalog, admin panel and public ordering page.</li>
+      <li>Customers build their order on the public page; the order is saved and handed off to the business as a pre-formatted WhatsApp message.</li>
+      <li>Enforced tenant data isolation with PostgreSQL Row Level Security, verified by automated database tests that run the real migrations.</li>
+      <li>Implemented a super admin area to create businesses, assign plans and manage trial and active subscriptions.</li>
+    </ul>
+    <p class="tech"><b>Technologies:</b> React 19, TypeScript, Vite, Tailwind CSS 4, React Router, TanStack Query, Zustand, Zod, Supabase, Vitest, Cloudflare Workers</p>
+  </div>
+
+  <div class="item">
+    <p class="item-head">Chantilly | chantillycom.com</p>
+    <p class="item-sub">Bakery website with online ordering and admin panel</p>
+    <ul>
+      <li>Built an online ordering flow where customers choose products and options, pick delivery or pickup, and send the order through WhatsApp with the message ready.</li>
+      <li>Developed an admin panel with login to manage live orders and their status, products, photos, prices, option groups, delivery settings and opening hours.</li>
+      <li>Added sales reporting by day, week, month and year.</li>
+    </ul>
+    <p class="tech"><b>Technologies:</b> Vite, Tailwind CSS 4, JavaScript, Supabase (Auth, PostgreSQL, Storage)</p>
+  </div>
+
+  <div class="item">
+    <p class="item-head">Texproseg 360 | texproseg360.com</p>
+    <p class="item-sub">Corporate website and product catalog</p>
+    <ul>
+      <li>Built the corporate site and catalog for a personal protective equipment, workwear, hardware and signage company in Santander, Colombia.</li>
+      <li>Designed category pages that lead buyers to request a quote on WhatsApp or download the PDF catalog.</li>
+    </ul>
+    <p class="tech"><b>Technologies:</b> HTML, CSS, Cloudflare</p>
+  </div>
+
+  <div class="item">
+    <p class="item-head">Laura Muñoz | laurammunoz.com</p>
+    <p class="item-sub">Bilingual personal website</p>
+    <ul>
+      <li>Built a bilingual (Spanish and English) personal site for a purchasing analyst, with downloadable CVs in both languages.</li>
+      <li>Configured a Cloudflare Worker that serves English to visitors from non-Spanish-speaking countries, with the visitor's language choice saved in a cookie.</li>
+    </ul>
+    <p class="tech"><b>Technologies:</b> HTML, CSS, JavaScript, Python, Cloudflare Workers</p>
+  </div>
+
+  <div class="item">
+    <p class="item-head">Surtitornillos SAS | kylenavarro.github.io/WebSurtiTornillos</p>
+    <p class="item-sub">Corporate landing page</p>
+    <ul>
+      <li>Built the landing page of an industrial and hardware supplier in Barrancabermeja, Colombia, presenting its product lines, brands and contact channels.</li>
+    </ul>
+    <p class="tech"><b>Technologies:</b> HTML, CSS, JavaScript, GitHub Pages</p>
+  </div>
+
+  <div class="item">
+    <p class="item-head">Olímpicas Sport | olimpicassport.netlify.app</p>
+    <p class="item-sub">One-page corporate website</p>
+    <ul>
+      <li>Built a one-page corporate site for a uniform and workwear manufacturer, showing what it makes, what it supplies and how to request a quote.</li>
+      <li>Delivered a dependency-free site with SEO and Open Graph metadata and optimized WebP images.</li>
+    </ul>
+    <p class="tech"><b>Technologies:</b> HTML, CSS, JavaScript, Netlify</p>
+  </div>
+
+  <div class="item">
+    <p class="item-head">AgentPrice (in development)</p>
+    <p class="item-sub">AI quoting chat widget for business websites</p>
+    <ul>
+      <li>Building an embeddable chat that any business adds to its website with one line of code; the visitor describes what they need in plain language.</li>
+      <li>Uses the Claude API to match requests against the business's price list in Google Sheets and generate a formal quote as PNG, PDF or Excel.</li>
+      <li>Validates the visitor's WhatsApp number and converts prices to the visitor's local currency; one server supports multiple businesses with their own settings.</li>
+    </ul>
+    <p class="tech"><b>Technologies:</b> Node.js, Express, Claude API, Google Sheets API, PDFKit, ExcelJS</p>
+  </div>
+
+  <h2>Education</h2>
+  <div class="item">
+    <p class="item-head">Production Engineering</p>
+    <p>Professional degree in Production Engineering.</p>
+  </div>
+  <div class="item">
+    <p class="item-head">Web Development, Self-Taught</p>
+    <p>Online training with Platzi and Academia Hola Mundo, complemented by building real projects for clients.</p>
+  </div>
+</body>
+</html>

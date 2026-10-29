@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Cambia el título y la descripción -->
+  <title>Título de la entrada · Kyle Navarro</title>
+  <meta name="description" content="Una línea sobre de qué trata la entrada.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script>
+    (function () {
+      var root = document.documentElement, theme = null;
+      root.classList.add('js');
+      try { theme = localStorage.getItem('kn-theme'); } catch (e) {}
+      if (theme !== 'light' && theme !== 'dark') theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      root.dataset.theme = theme;
+    })();
+  </script>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none"><symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol></svg>
+  <article class="article">
+    <a class="article__back" href="../index.html#blog"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>Volver al portafolio</a>
+
+    <!-- Fecha en formato AAAA-MM-DD dentro de datetime -->
+    <p class="article__date"><time datetime="2026-11-05">5 de noviembre de 2026</time></p>
+    <h1 class="article__title">Título de la entrada</h1>
+
+    <div class="article__body">
+      <p>Escribe aquí el primer párrafo.</p>
+      <h2>Un subtítulo</h2>
+      <p>Más texto. Puedes usar listas:</p>
+      <ul>
+        <li>Un punto</li>
+        <li>Otro punto con <code>código</code></li>
+      </ul>
+    </div>
+  </article>
+</body>
+</html>
