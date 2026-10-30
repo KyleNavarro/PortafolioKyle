@@ -547,6 +547,9 @@ html { scrollbar-color: var(--line-strong) var(--bg); }
   object-fit: contain;
   transition: transform 400ms var(--ease-out);
 }
+/* Proyecto publicado pero aún sin cerrar con el cliente */
+.status.status--deal { border-style: solid; }
+
 /* AgentPrice: la imagen es fondo, no captura */
 .project--wip .project__media img { object-fit: cover; }
 
