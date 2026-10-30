@@ -906,11 +906,6 @@ html { scrollbar-color: var(--line-strong) var(--bg); }
   font-weight: 700;
 }
 .footer__cta a { overflow-wrap: anywhere; }
-.footer__note {
-  margin-top: 0.75rem;
-  color: var(--muted);
-  font-size: 0.75rem;
-}
 
 /* --- Cambio de tema con View Transitions -------------------------------- */
 

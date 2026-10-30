@@ -76,8 +76,7 @@
     'blog.title': 'Blog',
     'blog.lead': 'Notes on what I learn while building.',
     'blog.empty': 'No posts yet. I’ll be writing here soon.',
-    'footer.cta': 'Have a project in mind?',
-    'footer.note': 'Built with HTML, CSS and JavaScript. Set in Hack.'
+    'footer.cta': 'Have a project in mind?'
   };
 
   var ES = {};
